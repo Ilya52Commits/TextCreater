@@ -1,0 +1,38 @@
+﻿<Window x:Class="TextCreater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextCreater"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="25">
+                <MenuItem Header="Сохранить"></MenuItem>
+                <MenuItem Header="Созранить как"></MenuItem>
+                <MenuItem Header="Открыть"></MenuItem>
+                <MenuItem Header="Новое окно"></MenuItem>
+                <MenuItem Header="Печать"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Изменить">
+                <MenuItem Header="Шрифт"></MenuItem>
+                <MenuItem Header="Темы">
+                    <MenuItem Header="Тёмная"></MenuItem>
+                    <MenuItem Header="Светлая"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Время и дата"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <RichTextBox Margin="0,25,0,0" Height="NaN" FontSize="14" FontFamily="Candara">
+            <FlowDocument>
+                <Paragraph>
+                    
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+
+
+    </Grid>
+</Window>
